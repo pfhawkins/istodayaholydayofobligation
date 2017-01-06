@@ -22,11 +22,12 @@
 	</head>
 <body>
 <h1 id="yesno" style="font-size: 90px;text-align: center;">Who the hell knows?</h1>
-<p id="desc" style="font-size: 50px;text-align: center;">Thanks, USCCB.</p>
+<p id="desc1" style="font-size: 50px;text-align: center;">Thanks, USCCB.</p>
+<p id="desc2" style="font-size: 50px;text-align: center;"></p>
 <p id="more" style="bottom: 10px; font-size: 30px; text-align: center;">Want to know if you should go to Mass anyways? Check out <a href="http://istodayasolemnity.com/">IsTodayASolemnity.com</a></p>
 <script>
 var holyDays = [{month: "0", day: "1", description: "Blessed Virgin Mary, Mother of God"},
-{month: "0", day: "6", description: "Epiphany"},
+{month: "0", day: "6", description: "Epiphany", longdesc: "Depending on your region, the wise men may or many not have decided to wait for a few days."},
 {month: "2", day: "19", description: "Saint Joseph"},
 {month: "2", day: "25", description: "The Annunciation"},
 {month: "3", day: "5", description: "Easter"},
@@ -54,7 +55,7 @@ for (i = 0; i < 17; i++)
 		// Do something different here later in the future.
 //		document.getElementById("yesno").innerHTML = "Possibly.";
 //		document.getElementById("desc").innerHTML += "If the stars are aligned.";
-//		document.getElementById("desc").innerHTML = holyDays[i].description;
+		document.getElementById("desc2").innerHTML = holyDays[i].longdesc;
 		i = 100;
 	}
 }
